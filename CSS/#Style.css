@@ -1,0 +1,57 @@
+body{
+font-family:Arial;
+transition:0.3s;
+}
+
+.hero{
+padding:120px 20px;
+background:#eaf4ff;
+text-align:center;
+}
+
+.hero h1{
+font-size:60px;
+}
+
+.hero p{
+font-size:20px;
+}
+
+.card{
+box-shadow:0 0 15px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.news{
+background:#f4f4f4;
+padding:60px;
+}
+
+footer{
+background:#0d6efd;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+.dark-mode{
+background:#121212;
+color:white;
+}
+
+.dark-mode .card{
+background:#222;
+color:white;
+}
+
+.dark-mode .hero{
+background:#1f1f1f;
+}
+
+.dark-mode .news{
+background:#181818;
+}
