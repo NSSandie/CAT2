@@ -1,97 +1,164 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-
-<meta charset="UTF-8">
-
-<meta
-name="viewport"
-content="width=device-width, initial-scale=1">
-
-<title>Resources</title>
-
-<link
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-rel="stylesheet">
-
-<link
-rel="stylesheet"
-href="css/style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resources | Student Hub</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-<nav class="navbar navbar-dark bg-primary">
-
-<div class="container">
-
-<a class="navbar-brand"
-href="index.html">
-
-Student Hub
-
-</a>
-
-</div>
-
+<nav class="navbar navbar-expand-lg sh-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Student<span>Hub</span></a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="faculties.html">Faculties</a></li>
+        <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+        <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link active" href="resource.html">Resources</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <button class="btn-theme-toggle ms-3 mt-2 mt-lg-0" onclick="toggleTheme()">🌙 Dark Mode</button>
+    </div>
+  </div>
 </nav>
 
-<section class="container py-5">
-
-<h1>
-
-Student Resources
-
-</h1>
-
-<ul
-class="list-group">
-
-<li
-class="list-group-item">
-
-Library Access
-
-</li>
-
-<li
-class="list-group-item">
-
-Academic Calendar
-
-</li>
-
-<li
-class="list-group-item">
-
-Research Guides
-
-</li>
-
-<li
-class="list-group-item">
-
-Online Learning
-
-</li>
-
-</ul>
-
+<section class="page-hero">
+  <div class="container">
+    <h1>Student Resources</h1>
+    <p style="color:rgba(255,255,255,0.75); margin-top:0.5rem;">Everything you need to study, research, and succeed academically.</p>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active">Resources</li>
+      </ol>
+    </nav>
+  </div>
 </section>
 
-<footer>
+<section class="section-pad">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-8">
+        <span class="section-label">Academic Tools</span>
+        <h2 class="section-title mb-4">Library &amp; Learning Resources</h2>
 
-<p>
-© BBIT STUDENT 2026
-</p>
+        <a href="#" class="resource-item">
+          <span class="resource-icon">📚</span>
+          <div><h6>Digital Library Access</h6><p>Access 50,000+ e-books, journals, and research papers through our digital library portal.</p></div>
+          <span style="margin-left:auto; color:var(--muted);">→</span>
+        </a>
+        <a href="#" class="resource-item">
+          <span class="resource-icon">📅</span>
+          <div><h6>Academic Calendar 2026/2027</h6><p>View all semester dates, exam timetables, and university holidays.</p></div>
+          <span style="margin-left:auto; color:var(--muted);">→</span>
+        </a>
+        <a href="#" class="resource-item">
+          <span class="resource-icon">🔬</span>
+          <div><h6>Research Guides &amp; Databases</h6><p>Discipline-specific research guides and access to JSTOR, Springer, and IEEE databases.</p></div>
+          <span style="margin-left:auto; color:var(--muted);">→</span>
+        </a>
+        <a href="#" class="resource-item">
+          <span class="resource-icon">🖥️</span>
+          <div><h6>Online Learning Platform</h6><p>Access recorded lectures, course slides, and assignments through the student LMS.</p></div>
+          <span style="margin-left:auto; color:var(--muted);">→</span>
+        </a>
+        <a href="#" class="resource-item">
+          <span class="resource-icon">✍️</span>
+          <div><h6>Writing &amp; Citation Support</h6><p>APA, MLA, and Harvard referencing guides plus access to Turnitin for plagiarism checking.</p></div>
+          <span style="margin-left:auto; color:var(--muted);">→</span>
+        </a>
+        <a href="#" class="resource-item">
+          <span class="resource-icon">🧑‍💻</span>
+          <div><h6>Software &amp; Tools Licenses</h6><p>Free access to Microsoft 365, MATLAB, AutoCAD, and Adobe Creative Suite for students.</p></div>
+          <span style="margin-left:auto; color:var(--muted);">→</span>
+        </a>
+        <a href="#" class="resource-item">
+          <span class="resource-icon">🎓</span>
+          <div><h6>Scholarship &amp; Bursary Portal</h6><p>Apply for merit scholarships, government bursaries, and external funding opportunities.</p></div>
+          <span style="margin-left:auto; color:var(--muted);">→</span>
+        </a>
+        <a href="#" class="resource-item">
+          <span class="resource-icon">🧠</span>
+          <div><h6>Counselling &amp; Mental Health Support</h6><p>Book a session with a student counsellor or access self-help resources online.</p></div>
+          <span style="margin-left:auto; color:var(--muted);">→</span>
+        </a>
+      </div>
 
+      <!-- Sidebar -->
+      <div class="col-lg-4">
+        <div class="sh-card mb-4">
+          <div class="sh-card-body">
+            <h5 style="margin-bottom:0.75rem;">🕐 Library Hours</h5>
+            <table style="width:100%; font-size:0.85rem; color:var(--muted);">
+              <tr><td style="padding:0.3rem 0;">Mon – Fri</td><td style="text-align:right;">7:00 AM – 10:00 PM</td></tr>
+              <tr><td style="padding:0.3rem 0;">Saturday</td><td style="text-align:right;">8:00 AM – 6:00 PM</td></tr>
+              <tr><td style="padding:0.3rem 0;">Sunday</td><td style="text-align:right;">10:00 AM – 4:00 PM</td></tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="sh-card mb-4">
+          <div class="sh-card-body">
+            <h5 style="margin-bottom:0.75rem;">📞 Quick Contacts</h5>
+            <p style="font-size:0.85rem; color:var(--muted);">Library Desk: ext. 101<br>IT Support: ext. 202<br>Registrar: ext. 303<br>Counselling: ext. 404</p>
+          </div>
+        </div>
+
+        <div class="sh-card">
+          <div class="sh-card-body">
+            <h5 style="margin-bottom:0.75rem;">Can't Find It?</h5>
+            <p style="font-size:0.85rem; color:var(--muted); margin-bottom:1rem;">Ask our resource team directly and we'll point you in the right direction.</p>
+            <a href="contact.html" class="btn-primary-sh" style="display:block; text-align:center; font-size:0.88rem;">Ask a Question →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="sh-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="sh-footer-brand">Student<span>Hub</span></div>
+        <p style="font-size:0.88rem; max-width:280px;">Empowering learners through accessible education and technology.</p>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h5>Pages</h5>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="events.html">Events</a>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h5>More</h5>
+        <a href="faculties.html">Faculties</a>
+        <a href="blog.html">Blog</a>
+        <a href="resource.html">Resources</a>
+        <a href="gallery.html">Gallery</a>
+      </div>
+      <div class="col-lg-4">
+        <h5>Contact</h5>
+        <p style="font-size:0.88rem;">📍 Nairobi, Kenya<br>📧 info@studenthub.ac.ke<br>📞 +254 700 000 000</p>
+      </div>
+    </div>
+    <div class="sh-footer-bottom">
+      <span>© 2026 StudentHub — BBIT Student Project</span>
+      <span>Built with HTML · CSS · JS · Bootstrap 5</span>
+    </div>
+  </div>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/script.js"></script>
-
 </body>
-
 </html>

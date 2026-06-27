@@ -1,16 +1,175 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Blog - Student Hub</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Student Hub</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-    <h1>Blog Page</h1>
+<nav class="navbar navbar-expand-lg sh-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Student<span>Hub</span></a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="faculties.html">Faculties</a></li>
+        <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+        <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+        <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="resource.html">Resources</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <button class="btn-theme-toggle ms-3 mt-2 mt-lg-0" onclick="toggleTheme()">🌙 Dark Mode</button>
+    </div>
+  </div>
+</nav>
 
-    <p>Blog posts will be added soon.</p>
+<section class="page-hero">
+  <div class="container">
+    <h1>Blog &amp; News</h1>
+    <p style="color:rgba(255,255,255,0.75); margin-top:0.5rem;">Stories, tips, and insights from the Student Hub community.</p>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active">Blog</li>
+      </ol>
+    </nav>
+  </div>
+</section>
 
-    <a href="index.html">← Back to Home</a>
+<section class="section-pad">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-8">
+        <span class="section-label">Latest Posts</span>
+        <h2 class="section-title mb-4">What's Happening</h2>
 
+        <div class="news-card mb-4">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=700&q=75" alt="Innovation Week" class="blog-hero-img">
+          <div class="news-card-body">
+            <span class="news-card-tag">Events</span>
+            <h5 style="font-size:1.25rem;">Student Innovation Week 2026: What to Expect</h5>
+            <p>This July, Student Hub hosts its most ambitious Innovation Week yet — five days of pitching, prototyping, and problem-solving with real industry mentors. Here's everything you need to know to participate and win.</p>
+            <span class="news-card-date">📅 June 20, 2026 · by James Oduya, Tech Editor</span>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="news-card">
+              <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=400&q=70" alt="Admissions" class="news-img">
+              <div class="news-card-body">
+                <span class="news-card-tag">Admissions</span>
+                <h5>How to Nail Your University Application in 2026</h5>
+                <p>Guidance from the admissions office on personal statements, deadlines, and scholarship opportunities.</p>
+                <span class="news-card-date">📅 June 14, 2026</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="news-card">
+              <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&q=70" alt="Study Tips" class="news-img">
+              <div class="news-card-body">
+                <span class="news-card-tag">Study Tips</span>
+                <h5>5 Proven Exam Preparation Strategies</h5>
+                <p>From spaced repetition to active recall — how top students prepare for end-of-semester exams.</p>
+                <span class="news-card-date">📅 June 8, 2026</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="news-card">
+              <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=400&q=70" alt="Mental Health" class="news-img">
+              <div class="news-card-body">
+                <span class="news-card-tag">Wellbeing</span>
+                <h5>Mental Health Resources Available on Campus</h5>
+                <p>Student counselling, peer support groups, and online wellness tools — a complete guide.</p>
+                <span class="news-card-date">📅 June 3, 2026</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="news-card">
+              <img src="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=400&q=70" alt="Internships" class="news-img">
+              <div class="news-card-body">
+                <span class="news-card-tag">Careers</span>
+                <h5>Top Internship Opportunities for BBIT Students</h5>
+                <p>A curated list of tech companies and startups currently offering internship placements in Nairobi.</p>
+                <span class="news-card-date">📅 May 28, 2026</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="col-lg-4">
+        <div class="sh-card mb-4">
+          <div class="sh-card-body">
+            <h5 style="margin-bottom:1rem;">Categories</h5>
+            <div style="display:flex; flex-direction:column; gap:0.5rem;">
+              <a href="#" style="display:flex; justify-content:space-between; color:var(--text); font-size:0.88rem; padding:0.4rem 0; border-bottom:1px solid var(--border); text-decoration:none;">Events <span style="color:var(--amber);">7</span></a>
+              <a href="#" style="display:flex; justify-content:space-between; color:var(--text); font-size:0.88rem; padding:0.4rem 0; border-bottom:1px solid var(--border); text-decoration:none;">Study Tips <span style="color:var(--amber);">12</span></a>
+              <a href="#" style="display:flex; justify-content:space-between; color:var(--text); font-size:0.88rem; padding:0.4rem 0; border-bottom:1px solid var(--border); text-decoration:none;">Admissions <span style="color:var(--amber);">5</span></a>
+              <a href="#" style="display:flex; justify-content:space-between; color:var(--text); font-size:0.88rem; padding:0.4rem 0; border-bottom:1px solid var(--border); text-decoration:none;">Careers <span style="color:var(--amber);">9</span></a>
+              <a href="#" style="display:flex; justify-content:space-between; color:var(--text); font-size:0.88rem; padding:0.4rem 0; text-decoration:none;">Wellbeing <span style="color:var(--amber);">4</span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="sh-card">
+          <div class="sh-card-body">
+            <h5 style="margin-bottom:0.75rem;">Write for Us</h5>
+            <p style="color:var(--muted); font-size:0.85rem; margin-bottom:1rem;">Share your story, project, or tips with the Student Hub community.</p>
+            <a href="contact.html" class="btn-primary-sh" style="display:block; text-align:center; font-size:0.88rem;">Submit a Post →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="sh-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="sh-footer-brand">Student<span>Hub</span></div>
+        <p style="font-size:0.88rem; max-width:280px;">Empowering learners through accessible education and technology.</p>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h5>Pages</h5>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="events.html">Events</a>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h5>More</h5>
+        <a href="faculties.html">Faculties</a>
+        <a href="blog.html">Blog</a>
+        <a href="resource.html">Resources</a>
+        <a href="gallery.html">Gallery</a>
+      </div>
+      <div class="col-lg-4">
+        <h5>Contact</h5>
+        <p style="font-size:0.88rem;">📍 Nairobi, Kenya<br>📧 info@studenthub.ac.ke<br>📞 +254 700 000 000</p>
+      </div>
+    </div>
+    <div class="sh-footer-bottom">
+      <span>© 2026 StudentHub — BBIT Student Project</span>
+      <span>Built with HTML · CSS · JS · Bootstrap 5</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

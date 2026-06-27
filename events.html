@@ -1,16 +1,179 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Events - Student Hub</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events | Student Hub</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-    <h1>Events Page</h1>
+<nav class="navbar navbar-expand-lg sh-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Student<span>Hub</span></a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="faculties.html">Faculties</a></li>
+        <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+        <li class="nav-item"><a class="nav-link active" href="events.html">Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="resource.html">Resources</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <button class="btn-theme-toggle ms-3 mt-2 mt-lg-0" onclick="toggleTheme()">🌙 Dark Mode</button>
+    </div>
+  </div>
+</nav>
 
-    <p>Events will be added soon.</p>
+<section class="page-hero">
+  <div class="container">
+    <h1>Campus Events</h1>
+    <p style="color:rgba(255,255,255,0.75); margin-top:0.5rem;">Stay up to date with workshops, seminars, and student activities.</p>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active">Events</li>
+      </ol>
+    </nav>
+  </div>
+</section>
 
-    <a href="index.html">← Back to Home</a>
+<section class="section-pad">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-8">
+        <span class="section-label">July 2026</span>
+        <h2 class="section-title mb-4">Upcoming Events</h2>
 
+        <div class="event-card">
+          <div class="event-date-block"><span class="day">7</span><span class="month">Jul</span></div>
+          <div class="event-info">
+            <span class="event-tag workshop">Workshop</span>
+            <h5>Introduction to Machine Learning with Python</h5>
+            <p>📍 ICT Lab 3 · 9:00 AM – 1:00 PM · Free for enrolled students</p>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-date-block"><span class="day">10</span><span class="month">Jul</span></div>
+          <div class="event-info">
+            <span class="event-tag seminar">Seminar</span>
+            <h5>Career Paths in Finance: Panel Discussion</h5>
+            <p>📍 Business Auditorium · 2:00 PM – 5:00 PM · Open to all</p>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-date-block"><span class="day">14</span><span class="month">Jul</span></div>
+          <div class="event-info">
+            <span class="event-tag workshop">Workshop</span>
+            <h5>Student Innovation Week Kick-off &amp; Idea Pitching</h5>
+            <p>📍 Main Hall · All day · Registration required</p>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-date-block"><span class="day">19</span><span class="month">Jul</span></div>
+          <div class="event-info">
+            <span class="event-tag social">Social</span>
+            <h5>Inter-Faculty Cultural Day &amp; Food Fair</h5>
+            <p>📍 Campus Grounds · 11:00 AM – 6:00 PM · Open to public</p>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-date-block"><span class="day">23</span><span class="month">Jul</span></div>
+          <div class="event-info">
+            <span class="event-tag seminar">Seminar</span>
+            <h5>Research Methods Bootcamp for Final Year Students</h5>
+            <p>📍 Library Seminar Room · 8:30 AM – 12:30 PM · Final year only</p>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-date-block"><span class="day">28</span><span class="month">Jul</span></div>
+          <div class="event-info">
+            <span class="event-tag workshop">Workshop</span>
+            <h5>Web Development Hackathon 2026</h5>
+            <p>📍 ICT Lab 1 &amp; 2 · 9:00 AM – 9:00 PM · Teams of 3–5</p>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-date-block"><span class="day">31</span><span class="month">Jul</span></div>
+          <div class="event-info">
+            <span class="event-tag social">Social</span>
+            <h5>End of Semester Celebration &amp; Awards Night</h5>
+            <p>📍 University Hall · 6:00 PM onwards · Formal dress</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="col-lg-4">
+        <div class="sh-card">
+          <div class="sh-card-body">
+            <h4 style="margin-bottom:1rem;">Register for an Event</h4>
+            <p style="color:var(--muted); font-size:0.88rem; margin-bottom:1.25rem;">Secure your spot for upcoming workshops and seminars before they fill up.</p>
+            <a href="contact.html" class="btn-primary-sh" style="display:block; text-align:center;">Contact to Register →</a>
+          </div>
+        </div>
+
+        <div class="sh-card" style="margin-top:1.25rem;">
+          <div class="sh-card-body">
+            <h5 style="margin-bottom:0.75rem;">Event Categories</h5>
+            <div style="display:flex; flex-wrap:wrap; gap:0.5rem;">
+              <span class="event-tag workshop" style="font-size:0.78rem; padding:0.3rem 0.75rem; border-radius:20px;">🔧 Workshop</span>
+              <span class="event-tag seminar" style="font-size:0.78rem; padding:0.3rem 0.75rem; border-radius:20px;">🎤 Seminar</span>
+              <span class="event-tag social" style="font-size:0.78rem; padding:0.3rem 0.75rem; border-radius:20px;">🎉 Social</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="sh-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="sh-footer-brand">Student<span>Hub</span></div>
+        <p style="font-size:0.88rem; max-width:280px;">Empowering learners through accessible education and technology.</p>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h5>Pages</h5>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="events.html">Events</a>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h5>More</h5>
+        <a href="faculties.html">Faculties</a>
+        <a href="blog.html">Blog</a>
+        <a href="resource.html">Resources</a>
+        <a href="gallery.html">Gallery</a>
+      </div>
+      <div class="col-lg-4">
+        <h5>Contact</h5>
+        <p style="font-size:0.88rem;">📍 Nairobi, Kenya<br>📧 info@studenthub.ac.ke<br>📞 +254 700 000 000</p>
+      </div>
+    </div>
+    <div class="sh-footer-bottom">
+      <span>© 2026 StudentHub — BBIT Student Project</span>
+      <span>Built with HTML · CSS · JS · Bootstrap 5</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
